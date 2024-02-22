@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionMainInfo from '../sections/SectionMainInfo.astro';
+import SectionHeader from '../sections/SectionHeader.astro';
+import SectionSecondaryInfo from '../sections/SectionSecondaryInfo.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="flex justify-center items-center w-full my-12 flex-col gap-y-4">
+		<SectionHeader />
+		<div class="lg:w-[60%] w-[90%] flex lg:gap-x-4 gap-x-8 sm:flex-row flex-col">
+			<SectionSecondaryInfo />
+			<SectionMainInfo />
+		</div>
+	</main>
+</Layout>

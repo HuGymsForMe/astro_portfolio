@@ -1,0 +1,9 @@
+---
+import Title from "../../components/Title.astro";
+import {StudiesTimeline} from "../../components/StudiesTimeline.jsx";
+---
+<article class="section--mainInfo--studies">
+    <Title 
+        children="Datos académicos"/>
+    <StudiesTimeline client:only />
+</article>

@@ -1,0 +1,15 @@
+---
+import ImgHugo from '../static/fotohugo.webp';
+import { Image } from 'astro:assets';
+---
+
+
+<section class="section--header flex lg:flex-row flex-col lg:gap-0 gap-y-4 lg:w-[60%] w-[90%]">
+    <div class="section--header__title lg:w-[80%] w-full flex flex-col justify-center order-2">
+        <h1 class="section--header__title--name lg:text-4xl text-2xl  lg:text-left text-center text-[#2C89F0]">Hugo Díaz</h1>
+        <h2 class="section--header__title--job lg:text-2xl text-lg lg:text-left text-center text-[#2C89F0]">DESARROLLADOR WEB</h2>
+    </div>
+    <div class="section--header__img flex lg:justify-end lg:pr-12 justify-center items-center w-full lg:order-2 order-1">
+        <Image src={ImgHugo} alt="Hugo Díaz" class="section--header__img--img rounded-lg xl:w-[25%] md:w-[30%] w-[40%] flex flex-col justify-center items-center">
+    </div>
+</section>

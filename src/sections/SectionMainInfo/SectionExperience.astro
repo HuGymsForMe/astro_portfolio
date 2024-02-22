@@ -1,0 +1,9 @@
+---
+import Title from "../../components/Title.astro";
+import {ExperiencieTimeline} from "../../components/ExperienceTimeline.jsx";
+---
+<article class="section--mainInfo--experience">
+    <Title 
+        children="Experiencia Laboral"/>
+    <ExperiencieTimeline client:only />
+</article>
